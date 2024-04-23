@@ -1,4 +1,4 @@
-# Test Pyramid and Software Testing
+# Test Pyramid in Software Testing
 
 The Test Pyramid is a concept in software testing that represents the ideal distribution of different types of tests in a testing strategy. It was introduced by Mike Cohn in his book "Succeeding with Agile". The Test Pyramid consists of three layers:
 
