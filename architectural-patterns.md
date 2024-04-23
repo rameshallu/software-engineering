@@ -1,0 +1,19 @@
+Architectural patterns are high-level design solutions that provide guidelines and best practices for structuring software systems to achieve specific architectural goals. These patterns define the overall organization, relationships, and responsibilities of components within a system. Here are some common architectural patterns used in software development:
+
+1. **Layered Architecture**: Also known as the n-tier architecture, this pattern divides a system into multiple layers (e.g., presentation layer, business logic layer, data access layer) based on the responsibilities of each layer. Each layer communicates only with adjacent layers, promoting separation of concerns and modularity.
+
+2. **Model-View-Controller (MVC)**: MVC separates an application into three interconnected components: Model (data and business logic), View (user interface), and Controller (logic for handling user input and coordinating interactions between the model and view). MVC promotes a clean separation of concerns and facilitates maintainability and scalability.
+
+3. **Microservices Architecture**: Microservices architecture decomposes a large, monolithic application into smaller, independently deployable services, each responsible for a specific business capability. Services communicate via lightweight protocols (e.g., REST, gRPC) and can be developed, deployed, and scaled independently. Microservices promote flexibility, scalability, and resilience but introduce complexity in terms of coordination and management.
+
+4. **Event-Driven Architecture (EDA)**: In EDA, components communicate through the exchange of events, which represent significant occurrences or changes within the system. Events are asynchronously produced, consumed, and processed by event handlers, enabling loose coupling, scalability, and responsiveness. Common implementations include message queues, publish-subscribe systems, and event sourcing.
+
+5. **Service-Oriented Architecture (SOA)**: SOA decomposes a system into loosely coupled, reusable services that encapsulate business functionality and expose well-defined interfaces for communication. Services are typically accessed over a network using standardized protocols (e.g., SOAP, REST). SOA promotes flexibility, interoperability, and reusability but requires careful design of service contracts and governance.
+
+6. **Hexagonal Architecture (Ports and Adapters)**: Hexagonal architecture decouples the core business logic of an application from external dependencies (e.g., databases, UI frameworks) by defining ports (interfaces) through which the application interacts with external systems. Adapters are used to bridge between the application's core and external dependencies, enabling testability, flexibility, and maintainability.
+
+7. **Event Sourcing**: Event sourcing stores the state of a system as a sequence of immutable events, which represent changes to the system's state over time. Instead of persisting the current state, the system reconstructs its state by replaying events. Event sourcing enables auditability, temporal querying, and flexibility in data modeling.
+
+8. **CQRS (Command Query Responsibility Segregation)**: CQRS separates the read and write operations of a system into separate components, each optimized for its respective task. Commands are used to modify state (write), while queries are used to retrieve data (read). CQRS allows for independent scaling, optimization, and flexibility in handling read and write operations.
+
+These architectural patterns provide proven solutions to common design challenges in software development, enabling developers to create scalable, maintainable, and resilient systems that meet the needs of users and stakeholders. The choice of architectural pattern depends on factors such as the system requirements, scalability goals, team expertise, and organizational constraints.
